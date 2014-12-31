@@ -19,7 +19,10 @@ public class CTCI {
     public static void main(String[] args) {
         
         /*test unique chars in string*/
-        UniqueStringChars.isUnique("A Dogg went");
+        //UniqueStringChars.isUnique("A Dogg went");
+        
+        /*Test reverse string*/
+        ReverseString.reverseString("Not a palindrome");
         
     }
     
