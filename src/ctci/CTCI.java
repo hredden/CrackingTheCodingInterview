@@ -19,10 +19,13 @@ public class CTCI {
     public static void main(String[] args) {
         
         /*test unique chars in string*/
-        //UniqueStringChars.isUnique("A Dogg went");
+        //ArraysAndStrings.isUnique("A Dogg went");
         
         /*Test reverse string*/
-        ReverseString.reverseString("Not a palindrome");
+        //ArraysAndStrings.reverseString("Not a palindrome");
+        
+        /*Test permutations*/
+        ArraysAndStrings.isPermutation("Permutation", "noitatumre");
         
     }
     
