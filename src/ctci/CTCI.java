@@ -5,6 +5,7 @@
  */
 
 package ctci;
+import java.util.*;
 
 /**
  *
@@ -25,7 +26,28 @@ public class CTCI {
         //ArraysAndStrings.reverseString("Not a palindrome");
         
         /*Test permutations*/
-        ArraysAndStrings.isPermutation("Permutation", "noitatumre");
+        //ArraysAndStrings.isPermutation("Permutation", "noitatumre");
+        
+        /*Test deDupe*/
+        //create linked list with dupes
+        LinkedList<String> list = new LinkedList<String>();
+        
+        for(int i = 0; i < 10; i++)
+            list.add("Number " + i);
+        for(int j = 0; j < 5; j++)
+            list.add("Number " + j);
+        
+        //print test list
+        for (String num : list)
+            System.out.print(num + " ");
+        
+        //Call deDupe and reprint list
+        LinkedLists.deDupe(list);
+        System.out.println("List after removing dupes: " + '\n');
+        for (String num : list)
+            System.out.print(num + " ");
+        
+        
         
     }
     
