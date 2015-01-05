@@ -6,6 +6,7 @@
 
 package ctci;
 import java.util.*;
+import Tests.*;
 
 /**
  *
@@ -19,36 +20,17 @@ public class CTCI {
      */
     public static void main(String[] args) {
         
-        /*test unique chars in string*/
-        //ArraysAndStrings.isUnique("A Dogg went");
+        //ArraysAndStringsTest.testIsUnique("Doog");
         
-        /*Test reverse string*/
-        //ArraysAndStrings.reverseString("Not a palindrome");
+        //ArraysAndStringsTest.testReverseString("goD");
         
-        /*Test permutations*/
-        //ArraysAndStrings.isPermutation("Permutation", "noitatumre");
+        //ArraysAndStringsTest.testPermutations("racecar", "car");
         
-        /*Test deDupe*/
-        //create linked list with dupes
-        LinkedList<String> list = new LinkedList<String>();
+        //LinkedListsTest.testDedupe();
         
-        for(int i = 0; i < 10; i++)
-            list.add("Number " + i);
-        for(int j = 0; j < 5; j++)
-            list.add("Number " + j);
-        
-        //print test list
-        for (String num : list)
-            System.out.print(num + " ");
-        
-        //Call deDupe and reprint list
-        LinkedLists.deDupe(list);
-        System.out.println("List after removing dupes: " + '\n');
-        for (String num : list)
-            System.out.print(num + " ");
+        //LinkedListsTest.testNthToLast(20, 13);
         
         
-        
-    }
+    }//end main
     
-}
+}//end CTCI

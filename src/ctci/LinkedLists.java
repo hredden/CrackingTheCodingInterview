@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class LinkedLists {
     
-    public static <T> void deDupe (LinkedList<T> list){
+    public static void deDupe (LinkedList<?> list){
         
         ListIterator i = list.listIterator();
         Hashtable table = new Hashtable();
@@ -27,10 +27,34 @@ public class LinkedLists {
                 table.put(i.next(), true);
             }
 
-        }//end while
-        
-        
-        
+        }//end while       
     }//end deDupe
+    
+    public static void nthToLast (LinkedList<?> list, int n){
+        
+        ListIterator p1 = list.listIterator();
+        ListIterator p2 = list.listIterator();
+        
+        //Move p2 n elements into list
+        for(int i = 0; i < n; i++){
+            if(p2 == null){
+                System.out.println("This element doesn't exist");
+                return;
+            }
+            p2.next();
+        }
+        
+        //Move both pointers till p2 hits end of list
+        while(p2.hasNext()){
+            p1.next();
+            p2.next();
+        }
+        
+        //Print p1 which is nth to last element
+        p1.previous();
+        System.out.println(p1.next());
+            
+        
+    }//end 
     
 }
