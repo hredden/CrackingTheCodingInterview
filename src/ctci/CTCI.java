@@ -30,6 +30,11 @@ public class CTCI {
         
         //LinkedListsTest.testNthToLast(20, 13);
         
+        //ArraysAndStrings.reverseStringBuilder("Reverse");
+        
+        BinarySearchTreeTest.test();
+        
+        
         
     }//end main
     

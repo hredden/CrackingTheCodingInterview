@@ -30,6 +30,19 @@ public class ArraysAndStrings {
         }
     }//end reverseString
     
+    public static void reverseStringBuilder(String str){
+        
+        StringBuilder s = new StringBuilder();
+        
+        for(int i = str.length()-1; i >= 0; i--){
+        
+            s.append(str.charAt(i));
+        }//end for
+        
+        System.out.println(s);
+        
+    }//end reverseStringBuilder
+    
     /*Determines if a string is composed of only unique characters*/
     public static boolean isUnique(String str){
         
